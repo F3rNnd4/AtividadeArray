@@ -1,5 +1,7 @@
 //Exercicio Array
 
+
+
 //Método .reverse()
 //Esse método tem a função de inverter a ordem dos elementos, 
 //alterando o primeiro array.
@@ -33,7 +35,6 @@ console.log(petsInvertidos); //Saída: ['porquinho da india', 'gato', 'cachorro'
 
 
 
-
 //Método .concat()
 //Este método permite juntar arrays e retornar um novo.
 
@@ -56,7 +57,6 @@ let novasFrutasVitamicaC = frutasVitaminaC.concat(['abacaxi', 'caju', 'morango']
 //Exibo a lista original e a final
 console.log(frutasVitaminaC); //Saída: ['acerola', 'laranja', 'limão']
 console.log(novasFrutasVitamicaC); //Saída: ['acerola', 'laranja', 'limão', 'abacaxi', 'caju', 'morango']
-
 
 
 
@@ -90,7 +90,6 @@ console.log(meninasDaEquipeString); //Saída: Mariana, Julia, Rayssa, Fernanda
 
 
 
-
 //Método .indexOf()
 //Este procura pelo elemento dentro de um array e
 //se encontrar retorna com a posição/index em que o elemento está,
@@ -121,7 +120,6 @@ console.log(index); //Saída: -1
 
 
 
-
 //Método .includes()
 //O .includes() verifica se um elemento escolhido está incluso 
 //no array, se sim a saída é 'true' e se não 'false'.
@@ -148,19 +146,18 @@ console.log(trueOrFalse); //Saída: false
 
 
 
-
 //Método .forEach()
 //Este método nos permite percorrer o array um por um e realiza
 //uma ação para cada elemento.
 
 //----------------Exemplo 1----------------
-//Crio um array com estados do Sudeste
+//Crio um array com estados do Sudeste;
 let estadosSudeste = ['Sao Paulo', 'Minas Gerais', 'Espirito Santo', 'Rio de Janeiro'];
-//O .forEach é usado para percorrer pelos elementos e precisa de uma função como argumento.
-//Função essa com o nome de 'função de callback' (function(...))que é chamada para cada elemento.
-//O código dentro da função será executado quatro vez, um para cada estado.
+//O .forEach é usado para percorrer pelos elementos e precisa de uma função como 
+//argumento. Função essa com o nome de 'função de callback' (function(...))que é chamada
+//para cada elemento. O código dentro da função será executado quatro vez, um para cada estado;
 estadosSudeste.forEach(function (estadosSudeste) {
-    //Exibo o resultado do código
+    //Exibo o resultado do código;
     console.log(estadosSudeste)
     //Saída: Sao Paulo
     //Minas Gerais
@@ -173,7 +170,7 @@ estadosSudeste.forEach(function (estadosSudeste) {
 let doces = ['bolo', 'sorvete', 'chocolate', 'brigadeiro'];
 //Uso o método .forEach para percorrer pelos elementos e executar a função;
 doces.forEach(function (doces) {
-//Exibo o resultado do código
+    //Exibo o resultado do código;
     console.log(doces)
     //Saída: bolo
     //sorvete
@@ -184,9 +181,45 @@ doces.forEach(function (doces) {
 
 
 //Método .filter()
-//
+//Como o próprio nome diz, é um método usado para filtrar os elementos de um array.
 
+//----------------Exemplo 1----------------
+//Crio um array de nomes;
+let nomes = [
+            'Alejandra', 
+            'Bruna', 
+            'Beatriz', 
+            'Bento',
+            'Camila',
+            'Carol',
+            'Daniel'
+        ]
 
+//Com o método, eu vou filtar o array com os nomes e passar uma função á ele.
+//Neste caso eu quero filtrar os nomes que começem com (startsWith) a letra 'B';
+let nomesFiltrados = nomes.filter((nomes) => nomes.startsWith('B'));
+//Exibo os nomes filtrados;
+console.log(nomesFiltrados); //Saída: ['Bruna', 'Beatriz', 'Bento']
+
+//----------------Exemplo 2----------------
+//Crio um array de tipos de animais vertebrados e os animais;
+let vertebrados = [
+    { type: 'mamifero', animal: 'onça'},
+    { type: 'mamifero', animal: 'vaca'},
+    { type: 'reptil', animal: 'serpente'},
+    { type: 'reptil', animal: 'jacare'},
+    { type: 'reptil', animal: 'tartaruga'},
+    { type: 'ave', animal: 'galinha'}
+]
+//Nesse método se espera que o retono seja dos nomes dos animais que o tipo seja
+//reptil. Então do array de vertebrados que eu criei ele vai filtrar aqueles que o 
+//type (tipo) for igual a réptil;
+let vertebradosFiltrados = vertebrados.filter((animal) => animal.type == 'reptil');
+//Exibo o tipo com os animas filtrados;
+console.log(vertebradosFiltrados); 
+//Saída:  { type: 'reptil', animal: 'serpente'},
+        //{ type: 'reptil', animal: 'jacare'},
+        //{ type: 'reptil', animal: 'tartaruga'}
 
 
 //Método .reduce()
