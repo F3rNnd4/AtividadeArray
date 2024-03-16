@@ -154,7 +154,7 @@ console.log(trueOrFalse); //Saída: false
 //Crio um array com estados do Sudeste;
 let estadosSudeste = ['Sao Paulo', 'Minas Gerais', 'Espirito Santo', 'Rio de Janeiro'];
 //O .forEach é usado para percorrer pelos elementos e precisa de uma função como 
-//argumento. Função essa com o nome de 'função de callback' (function(...))que é chamada
+//argumento. Função essa com o nome de 'função de callback' que é chamada
 //para cada elemento. O código dentro da função será executado quatro vez, um para cada estado;
 estadosSudeste.forEach(function (estadosSudeste) {
     //Exibo o resultado do código;
@@ -212,9 +212,9 @@ let vertebrados = [
     { type: 'ave', animal: 'galinha'}
 ]
 //Nesse método se espera que o retono seja dos nomes dos animais que o tipo seja
-//reptil. Então do array de vertebrados que eu criei ele vai filtrar aqueles que o 
+//reptil. Então do array de vertebrados que eu criei vai filtrar aqueles que o 
 //type (tipo) for igual a réptil;
-let vertebradosFiltrados = vertebrados.filter((animal) => animal.type == 'reptil');
+let vertebradosFiltrados = vertebrados.filter((servivo) => servivo.type == 'reptil');
 //Exibo o tipo com os animas filtrados;
 console.log(vertebradosFiltrados); 
 //Saída:  { type: 'reptil', animal: 'serpente'},
@@ -222,9 +222,41 @@ console.log(vertebradosFiltrados);
         //{ type: 'reptil', animal: 'tartaruga'}
 
 
-//Método .reduce()
-//
 
+//Método .some()
+//Permite verificar se pelo o menos um elemento satifaz a condição.
+
+//----------------Exemplo 1----------------
+//Crio um array de tipos de alimentos orgânicos com nomes de alimentos;
+let organicos = [
+    { type: 'fruta', food: 'mamao'},
+    { type: 'fruta', food: 'pera'},
+    { type: 'verdura', food: 'brocolis'},
+    { type: 'legume', food: 'cenoura'},
+    { type: 'fruta', food: 'uva'},
+    { type: 'verdura', food: 'couve'}
+]
+//Nesta linha nós verificamos se pelo menos um dos elementos se encaixa na condição
+//que é: o tipo tem que ser igual a 'fruta'. Condição verdadeira;
+let organicosVerificados = organicos.some((comida) => comida.type == 'fruta');
+//Exibo o resultado da verificação;
+console.log(organicosVerificados); //Saída: true
+
+//----------------Exemplo 2----------------
+//Crio um array de nomes e quanto de mesada esses nomes ganham;
+let mesada = [
+    { name: 'Maria', pocketmoney: 200},
+    { name: 'Eduarda', pocketmoney: 150},
+    { name: 'Gabriel', pocketmoney: 180},
+    { name: 'Daniela', pocketmoney: 120},
+    { name: 'Fatima', pocketmoney: 250},
+    { name: 'Mayara', pocketmoney: 220}
+]
+//Nesta linha eu crio uma variável com uma função que verifica se pelo menos um elemento,
+//no caso a mesada (pocketmoney), é menor que 100. Função falsa;
+let mesadaVerificada = mesada.some((dinheiro) => dinheiro.pocketmoney < 100);
+//Exibo o resultado da verificação;
+console.log(mesadaVerificada); //Saída: false
 
 
 
