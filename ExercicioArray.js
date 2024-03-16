@@ -63,7 +63,7 @@ console.log(novasFrutasVitamicaC); //Saída: ['acerola', 'laranja', 'limão', 'a
 let letras = ['a', 'b', 'c'];
 
 //Utilizo o método para criar uma string que separe
-// os elementos com um traço, "-";
+//os elementos com um traço, "-";
 let letrasString = letras.join('-');
 
 //Exibo das duas formas, como array e como string;
@@ -71,7 +71,7 @@ console.log(letras); //Saída: ['a', 'b', 'c']
 console.log(letrasString); //Saída: a-b-c
 
 //----------------Exemplo 2----------------
-//Array com o nome das meninas da equipe com elementos;
+//Array com o nome das meninas da equipe como elementos;
 let meninasDaEquipe = ['Mariana', 'Julia', 'Rayssa', 'Fernanda'];
 
 //Uso o método para criar a string que separe os 
@@ -79,8 +79,8 @@ let meninasDaEquipe = ['Mariana', 'Julia', 'Rayssa', 'Fernanda'];
 let meninasDaEquipeString = meninasDaEquipe.join(', ');
 
 //E exibo como array e como string;
-console.log(meninasDaEquipe);
-console.log(meninasDaEquipeString);
+console.log(meninasDaEquipe); //Saída: ['Mariana', 'Julia', 'Rayssa', 'Fernanda']
+console.log(meninasDaEquipeString); //Saída: Mariana, Julia, Rayssa, Fernanda
 
     //Método .indexOf()
 //Este procura pelo elemento dentro de um array e
@@ -92,7 +92,7 @@ console.log(meninasDaEquipeString);
 let letra = ['a', 'b', 'c', 'd'];
 
 //Utilizo do método para descobrir em que posição/
-//index a letra 'd' esta;
+//index a letra 'd' está;
 let posicao = letra.indexOf('d')
 
 //Exibo essa posição;
@@ -111,7 +111,29 @@ let index = frase.indexOf('4');
 console.log(index); //Saída: -1
 
     //Método .includes()
-//
+//O .includes() verifica se um elemento escolhido está incluso 
+//no array, se sim a saída é 'true' e se não 'false'.
+
+//----------------Exemplo 1----------------
+//Crio o array com as vogais;
+let vogais = ['a', 'e', 'i', 'o', 'u'];
+
+//E verifico se a vogal escolhida 'i' está inclusa no array;
+let verificacao = vogais.includes('i');
+
+//O resultado é a resposta, que é verdadeiro que tem o 'i' no array;
+console.log(verificacao); //Saída: true
+
+//----------------Exemplo 2----------------
+//Crio array com os números ímpares;
+let numerosImpares = ['1', '3', '5', '7', '9'];
+
+//E examino se o número que quero procurar está no array;
+let trueOrFalse = numerosImpares.includes('2');
+
+//A resposta é false, falso, pois 2 é par e não está na lista de ímpares;
+console.log(trueOrFalse); //Saída: false
+
 
     //Método .forEach()
 //
