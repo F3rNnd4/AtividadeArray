@@ -8,17 +8,17 @@
 
 //----------------Exemplo 1----------------
 //Declaro elementos, no caso as cores;
-let cores = ['roxo', 'branco', 'preto'];
+let colors = ['roxo', 'branco', 'preto'];
 
 //Exibo para que na próxima etapa eu inverta a ordem;
-console.log(cores); //Saída: ['roxo', 'branco', 'preto']
+console.log(colors); //Saída: ['roxo', 'branco', 'preto']
 
 //Utilizo o método .reverse() para inverter a ordem
 //dos elementos declarados;
-let coresEmReverso = cores.reverse();
+let colorsInReverse = colors.reverse();
 
 //Exibo o resultado com o método aplicado;
-console.log(coresEmReverso); //Saída: ['preto', 'branco', 'roxo']
+console.log(colorsInReverse); //Saída: ['preto', 'branco', 'roxo']
 
 //----------------Exemplo 2----------------
 //Declaro elementos iniciais;
@@ -28,10 +28,10 @@ let pets = ['calopsita', 'cachorro', 'gato', 'porquinho da india'];
 console.log(pets); //Saída: ['calopsita', 'cachorro', 'gato', 'porquinho da india']
 
 //Uso o método .reverse() para inverter a ordem;
-let petsInvertidos = pets.reverse();
+let invertedPets = pets.reverse();
 
 //Exibo a ordem invertida;
-console.log(petsInvertidos); //Saída: ['porquinho da india', 'gato', 'cachorro', 'calopsita']
+console.log(invertedPets); //Saída: ['porquinho da india', 'gato', 'cachorro', 'calopsita']
 
 
 
@@ -40,23 +40,23 @@ console.log(petsInvertidos); //Saída: ['porquinho da india', 'gato', 'cachorro'
 
 //----------------Exemplo 1----------------
 //Crio o meu array, a minha lista;
-let listaNumeros = [1, 2, 3];
+let listOfNumbers = [1, 2, 3];
 //Crio um novo array com o método para adicionar mais números a essa lista;
-let novaListaNumeros = listaNumeros.concat([4, 5, 6]);
+let newListOfNumbers = listOfNumbers.concat([4, 5, 6]);
 
 //Exibo a lista inicial e a final atualizada;
-console.log(listaNumeros); //Saída: [1, 2, 3]
-console.log(novaListaNumeros); //Saída: [1, 2, 3, 4, 5, 6]
+console.log(listOfNumbers); //Saída: [1, 2, 3]
+console.log(newListOfNumbers); //Saída: [1, 2, 3, 4, 5, 6]
 
 //----------------Exemplo 2----------------
 //Crio o array, uma lista de frutas
-let frutasVitaminaC = ['acerola', 'laranja', 'limão'];
+let fruitsVitaminC = ['acerola', 'laranja', 'limão'];
 //Novo array utilizando o método para colocar mais frutas;
-let novasFrutasVitamicaC = frutasVitaminaC.concat(['abacaxi', 'caju', 'morango']);
+let newFruitsVitaminC = fruitsVitaminC.concat(['abacaxi', 'caju', 'morango']);
 
 //Exibo a lista original e a final
-console.log(frutasVitaminaC); //Saída: ['acerola', 'laranja', 'limão']
-console.log(novasFrutasVitamicaC); //Saída: ['acerola', 'laranja', 'limão', 'abacaxi', 'caju', 'morango']
+console.log(fruitsVitaminC); //Saída: ['acerola', 'laranja', 'limão']
+console.log(newFruitsVitaminC); //Saída: ['acerola', 'laranja', 'limão', 'abacaxi', 'caju', 'morango']
 
 
 
@@ -66,27 +66,27 @@ console.log(novasFrutasVitamicaC); //Saída: ['acerola', 'laranja', 'limão', 'a
 
 //----------------Exemplo 1----------------
 //Crio um array com as letras sendo os elementos;
-let letras = ['a', 'b', 'c'];
+let letters = ['a', 'b', 'c'];
 
 //Utilizo o método para criar uma string que separe
 //os elementos com um traço, "-";
-let letrasString = letras.join('-');
+let lettersString = letters.join('-');
 
 //Exibo das duas formas, como array e como string;
-console.log(letras); //Saída: ['a', 'b', 'c']
-console.log(letrasString); //Saída: a-b-c
+console.log(letters); //Saída: ['a', 'b', 'c']
+console.log(lettersString); //Saída: a-b-c
 
 //----------------Exemplo 2----------------
 //Array com o nome das meninas da equipe como elementos;
-let meninasDaEquipe = ['Mariana', 'Julia', 'Rayssa', 'Fernanda'];
+let teamGirls = ['Mariana', 'Julia', 'Rayssa', 'Fernanda'];
 
 //Uso o método para criar a string que separe os 
 //nomes com virgula e espaço, ", ";
-let meninasDaEquipeString = meninasDaEquipe.join(', ');
+let teamGirlsString = teamGirls.join(', ');
 
 //E exibo como array e como string;
-console.log(meninasDaEquipe); //Saída: ['Mariana', 'Julia', 'Rayssa', 'Fernanda']
-console.log(meninasDaEquipeString); //Saída: Mariana, Julia, Rayssa, Fernanda
+console.log(teamGirls); //Saída: ['Mariana', 'Julia', 'Rayssa', 'Fernanda']
+console.log(teamGirlsString); //Saída: Mariana, Julia, Rayssa, Fernanda
 
 
 
@@ -97,22 +97,22 @@ console.log(meninasDaEquipeString); //Saída: Mariana, Julia, Rayssa, Fernanda
 
 //----------------Exemplo 1----------------
 //Gero um array com letras;
-let letra = ['a', 'b', 'c', 'd'];
+let lettersList = ['a', 'b', 'c', 'd'];
 
 //Utilizo do método para descobrir em que posição/
 //index a letra 'd' está;
-let posicao = letra.indexOf('d')
+let position = lettersList.indexOf('d')
 
 //Exibo essa posição;
-console.log(posicao); //Saída: 3
+console.log(position); //Saída: 3
 
 //----------------Exemplo 2----------------
 //Gero array com números;
-let frase = ['1', '2', '3'];
+let numbers = ['1', '2', '3'];
 
 //Utilizo do método para descobrir em que posição/
 //index o número '4' que não se encontra no array está;
-let index = frase.indexOf('4');
+let index = numbers.indexOf('4');
 
 //Como o número '4' não existe no array a posição 
 //vai ser '-1';
@@ -126,23 +126,23 @@ console.log(index); //Saída: -1
 
 //----------------Exemplo 1----------------
 //Crio o array com as vogais;
-let vogais = ['a', 'e', 'i', 'o', 'u'];
+let vowels = ['a', 'e', 'i', 'o', 'u'];
 
 //E verifico se a vogal escolhida 'i' está inclusa no array;
-let verificacao = vogais.includes('i');
+let verification = vowels.includes('i');
 
 //O resultado é a resposta, que é verdadeiro que tem o 'i' no array;
-console.log(verificacao); //Saída: true
+console.log(verification); //Saída: true
 
 //----------------Exemplo 2----------------
 //Crio array com os números ímpares;
-let numerosImpares = ['1', '3', '5', '7', '9'];
+let oddNumbers = ['1', '3', '5', '7', '9'];
 
 //E examino se o número que quero procurar está no array;
-let trueOrFalse = numerosImpares.includes('2');
+let analysis = oddNumbers.includes('2');
 
 //A resposta é false, falso, pois 2 é par e não está na lista de ímpares;
-console.log(trueOrFalse); //Saída: false
+console.log(analysis); //Saída: false
 
 
 
@@ -152,13 +152,13 @@ console.log(trueOrFalse); //Saída: false
 
 //----------------Exemplo 1----------------
 //Crio um array com estados do Sudeste;
-let estadosSudeste = ['Sao Paulo', 'Minas Gerais', 'Espirito Santo', 'Rio de Janeiro'];
+let southeasternStates = ['Sao Paulo', 'Minas Gerais', 'Espirito Santo', 'Rio de Janeiro'];
 //O .forEach é usado para percorrer pelos elementos e precisa de uma função como 
 //argumento. Função essa com o nome de 'função de callback' que é chamada
 //para cada elemento. O código dentro da função será executado quatro vez, um para cada estado;
-estadosSudeste.forEach(function (estadosSudeste) {
+southeasternStates.forEach(function (southeasternStates) {
     //Exibo o resultado do código;
-    console.log(estadosSudeste)
+    console.log(southeasternStates);
     //Saída: Sao Paulo
     //Minas Gerais
     //Espirito Santo
@@ -167,11 +167,11 @@ estadosSudeste.forEach(function (estadosSudeste) {
 
 //----------------Exemplo 2----------------
 //Crio um array com doces
-let doces = ['bolo', 'sorvete', 'chocolate', 'brigadeiro'];
+let sweets = ['bolo', 'sorvete', 'chocolate', 'brigadeiro'];
 //Uso o método .forEach para percorrer pelos elementos e executar a função;
-doces.forEach(function (doces) {
+sweets.forEach(function (sweets) {
     //Exibo o resultado do código;
-    console.log(doces)
+    console.log(sweets)
     //Saída: bolo
     //sorvete
     //chocolate
@@ -185,7 +185,7 @@ doces.forEach(function (doces) {
 
 //----------------Exemplo 1----------------
 //Crio um array de nomes;
-let nomes = [
+let names = [
             'Alejandra', 
             'Bruna', 
             'Beatriz', 
@@ -197,13 +197,13 @@ let nomes = [
 
 //Com o método, eu vou filtar o array com os nomes e passar uma função á ele.
 //Neste caso eu quero filtrar os nomes que começem com (startsWith) a letra 'B';
-let nomesFiltrados = nomes.filter((nomes) => nomes.startsWith('B'));
+let filteredNames = names.filter((n) => n.startsWith('B'));
 //Exibo os nomes filtrados;
-console.log(nomesFiltrados); //Saída: ['Bruna', 'Beatriz', 'Bento']
+console.log(filteredNames); //Saída: ['Bruna', 'Beatriz', 'Bento']
 
 //----------------Exemplo 2----------------
 //Crio um array de tipos de animais vertebrados e os animais;
-let vertebrados = [
+let vertebrates = [
     { type: 'mamifero', animal: 'onça'},
     { type: 'mamifero', animal: 'vaca'},
     { type: 'reptil', animal: 'serpente'},
@@ -214,9 +214,9 @@ let vertebrados = [
 //Nesse método se espera que o retono seja dos nomes dos animais que o tipo seja
 //reptil. Então do array de vertebrados que eu criei vai filtrar aqueles que o 
 //type (tipo) for igual a réptil;
-let vertebradosFiltrados = vertebrados.filter((servivo) => servivo.type == 'reptil');
+let filteredVertebrates = vertebrates.filter((a) => a.type == 'reptil');
 //Exibo o tipo com os animas filtrados;
-console.log(vertebradosFiltrados); 
+console.log(filteredVertebrates); 
 //Saída:  { type: 'reptil', animal: 'serpente'},
         //{ type: 'reptil', animal: 'jacare'},
         //{ type: 'reptil', animal: 'tartaruga'}
@@ -228,7 +228,7 @@ console.log(vertebradosFiltrados);
 
 //----------------Exemplo 1----------------
 //Crio um array de tipos de alimentos orgânicos com nomes de alimentos;
-let organicos = [
+let organics = [
     { type: 'fruta', food: 'mamao'},
     { type: 'fruta', food: 'pera'},
     { type: 'verdura', food: 'brocolis'},
@@ -238,13 +238,13 @@ let organicos = [
 ]
 //Nesta linha nós verificamos se pelo menos um dos elementos se encaixa na condição
 //que é: o tipo tem que ser igual a 'fruta'. Condição verdadeira;
-let organicosVerificados = organicos.some((comida) => comida.type == 'fruta');
+let verifiedOrganics = organics.some((f) => f.type == 'fruta');
 //Exibo o resultado da verificação;
-console.log(organicosVerificados); //Saída: true
+console.log(verifiedOrganics); //Saída: true
 
 //----------------Exemplo 2----------------
 //Crio um array de nomes e quanto de mesada esses nomes ganham;
-let mesada = [
+let pocketmoney = [
     { name: 'Maria', pocketmoney: 200},
     { name: 'Eduarda', pocketmoney: 150},
     { name: 'Gabriel', pocketmoney: 180},
@@ -254,9 +254,9 @@ let mesada = [
 ]
 //Nesta linha eu crio uma variável com uma função que verifica se pelo menos um elemento,
 //no caso a mesada (pocketmoney), é menor que 100. Função falsa;
-let mesadaVerificada = mesada.some((dinheiro) => dinheiro.pocketmoney < 100);
+let verifiedPocketMoney = pocketmoney.some((m) => m.pocketmoney < 100);
 //Exibo o resultado da verificação;
-console.log(mesadaVerificada); //Saída: false
+console.log(verifiedPocketMoney); //Saída: false
 
 
 
@@ -268,25 +268,53 @@ console.log(mesadaVerificada); //Saída: false
 //Crio um array com letras;
 let array = ['a', 'b', 'c', 'd', 'e'];
 //Usando o .slice(), nós criamos uma cópia do array que começa a partir da posição 2;
-let novoArray = array.slice(2);
+let newArray = array.slice(2);
 //Exibo o array original e a cópia;
 console.log(array); //Saída: ['a', 'b', 'c', 'd', 'e']
-console.log(novoArray); //Saída: ['c', 'd', 'e']
+console.log(newArray); //Saída: ['c', 'd', 'e']
 
 //----------------Exemplo 2----------------
 //Crio um array com letras;
-let lista = ['a', 'b', 'c', 'd', 'e'];
+let list = ['a', 'b', 'c', 'd', 'e'];
 //Usando o .slice(), criamos uma cópia do array onde o número antes
 //da vírgula é de onde queremos começar e o número depois onde queremos cortar o array;
-let novaLista = lista.slice(1, 4);
+let newList = list.slice(1, 4);
 //Exibo o original e a cópia;
-console.log(lista); //Saída: ['a', 'b', 'c', 'd', 'e']
-console.log(novaLista); //Saída: ['b', 'c', 'd']
+console.log(list); //Saída: ['a', 'b', 'c', 'd', 'e']
+console.log(newList); //Saída: ['b', 'c', 'd']
+
 
 
 //Método .find()
-//
+//Busca e retorna o primeiro elemento dentro da array que satifazer a condição.
 
+//----------------Exemplo 1----------------
+//Crio um array com sabores de bolo;
+let cakes = [
+    'chocolate',
+    'limao',
+    'laranja',
+    'coco',
+    'milho'
+];
+//Com o método, eu vou buscar no array o primeiro sabor de bolo que comece com a letra 'l';
+let foundCakes = cakes.find(c => c.startsWith('l'));
+//Exibo o primeiro resultado encontrado;
+console.log(foundCakes); //Saída: limao
+ 
+//----------------Exemplo 2----------------
+//Crio um array com pets que conheço;
+let petsThatIKnow = [
+    { name: 'kito', animal: 'calopsita'},
+    { name: 'jade', animal: 'porquinho da india'},
+    { name: 'chico', animal: 'gato'},
+    { name: 'lilica', animal: 'gato'},
+    { name: 'ruginha', animal: 'tartaruga'}
+]
+//Com o método, eu vou buscar no array na parte dos animais por gato;
+let foundPet = petsThatIKnow.find(pet => pet.animal == 'gato');
+//Exibo o primeiro resultado encontrado;
+console.log(foundPet);
 
 
 
