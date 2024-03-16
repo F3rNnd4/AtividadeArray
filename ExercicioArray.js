@@ -8,33 +8,31 @@
 //Declaro elementos, no caso as cores;
 let cores = ['roxo', 'branco', 'preto'];
 
-//Exibo só para comparar depois com
-// o resultado com o método aplicado;
-console.log('Cores iniciais: ' + cores);
-
+//Exibo para que na próxima etapa eu inverta a ordem;
+console.log(cores); //Saída: ['roxo', 'branco', 'preto']
 
 //Utilizo o método .reverse() para inverter a ordem
 //dos elementos declarados;
 let coresEmReverso = cores.reverse();
 
-//Exibo as cores que declarei da forma invertida;
-console.log('Cores após o método: ' + coresEmReverso);
+//Exibo o resultado com o método aplicado;
+console.log(coresEmReverso); //Saída: ['preto', 'branco', 'roxo']
 
 //----------------Exemplo 2----------------
 //Declaro elementos iniciais;
 let pets = ['calopsita', 'cachorro', 'gato', 'porquinho da india'];
 
-//Exibo eles para comparar com os outros resultados;
-console.log(pets);
+//Exibo para que na próxima etapa eu inverta a ordem;
+console.log(pets); //Saída: ['calopsita', 'cachorro', 'gato', 'porquinho da india']
 
-//Uso o método para inverter a ordem;
+//Uso o método .reverse() para inverter a ordem;
 let petsInvertidos = pets.reverse();
 
-//Exibo os elementos na ordem invertida;
-console.log(petsInvertidos);
+//Exibo a ordem invertida;
+console.log(petsInvertidos); //Saída: ['porquinho da india', 'gato', 'cachorro', 'calopsita']
 
     //Método .concat()
-//Este método permite juntar arrays e retornar um novo
+//Este método permite juntar arrays e retornar um novo.
 
 //----------------Exemplo 1----------------
 //Crio o meu array, a minha lista;
@@ -43,8 +41,8 @@ let listaNumeros = [1, 2, 3];
 let novaListaNumeros = listaNumeros.concat([4, 5, 6]);
 
 //Exibo a lista inicial e a final atualizada;
-console.log(listaNumeros);
-console.log(novaListaNumeros);
+console.log(listaNumeros); //Saída: [1, 2, 3]
+console.log(novaListaNumeros); //Saída: [1, 2, 3, 4, 5, 6]
 
 //----------------Exemplo 2----------------
 //Crio o array, uma lista de frutas
@@ -53,11 +51,36 @@ let frutasVitaminaC = ['acerola', 'laranja', 'limão'];
 let novasFrutasVitamicaC = frutasVitaminaC.concat(['abacaxi', 'caju', 'morango']);
 
 //Exibo a lista original e a final
-console.log(frutasVitaminaC);
-console.log(novasFrutasVitamicaC);
+console.log(frutasVitaminaC); //Saída: ['acerola', 'laranja', 'limão']
+console.log(novasFrutasVitamicaC); //Saída: ['acerola', 'laranja', 'limão', 'abacaxi', 'caju', 'morango']
 
     //Método .join()
-//
+//O .join() cria uma string através do array, ou 
+//junta os elementos do array em uma string.
+
+//----------------Exemplo 1----------------
+//Crio um array com as letras sendo os elementos;
+let letras = ['a', 'b', 'c'];
+
+//Utilizo o método para criar uma string que separe
+// os elementos com um traço, "-";
+let letrasString = letras.join('-');
+
+//Exibo das duas formas, como array e como string;
+console.log(letras); //Saída: ['a', 'b', 'c']
+console.log(letrasString); //Saída: a-b-c
+
+//----------------Exemplo 2----------------
+//Array com o nome das meninas da equipe com elementos;
+let meninasDaEquipe = ['Mariana', 'Julia', 'Rayssa', 'Fernanda'];
+
+//Uso o método para criar a string que separe os 
+//nomes com virgula e espaço, ", ";
+let meninasDaEquipeString = meninasDaEquipe.join(', ');
+
+//E exibo como array e como string;
+console.log(meninasDaEquipe);
+console.log(meninasDaEquipeString);
 
     //Método .indexOf()
 //
