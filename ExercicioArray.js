@@ -92,17 +92,22 @@ console.log(meninasDaEquipeString);
 let letra = ['a', 'b', 'c', 'd'];
 
 //Utilizo do método para descobrir em que posição/
-//index a letra 'd' esta,
+//index a letra 'd' esta;
 let posicao = letra.indexOf('d')
 
-//Exibo essa posição,
+//Exibo essa posição;
 console.log(posicao); //Saída: 3
 
 //----------------Exemplo 2----------------
-let frase = 'Nao consigo pensar em frase';
+//Gero array com números;
+let frase = ['1', '2', '3'];
 
-let index = frase.indexOf('nenhuma');
+//Utilizo do método para descobrir em que posição/
+//index o número '4' que não se encontra no array está;
+let index = frase.indexOf('4');
 
+//Como o número '4' não existe no array a posição 
+//vai ser '-1';
 console.log(index); //Saída: -1
 
     //Método .includes()
