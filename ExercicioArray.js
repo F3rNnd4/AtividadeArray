@@ -83,7 +83,27 @@ console.log(meninasDaEquipe);
 console.log(meninasDaEquipeString);
 
     //Método .indexOf()
-//
+//Este procura pelo elemento dentro de um array e
+//se encontrar retorna com a posição/index em que o elemento está,
+//se não encontrar retorna com "-1".
+
+//----------------Exemplo 1----------------
+//Gero um array com letras;
+let letra = ['a', 'b', 'c', 'd'];
+
+//Utilizo do método para descobrir em que posição/
+//index a letra 'd' esta,
+let posicao = letra.indexOf('d')
+
+//Exibo essa posição,
+console.log(posicao); //Saída: 3
+
+//----------------Exemplo 2----------------
+let frase = 'Nao consigo pensar em frase';
+
+let index = frase.indexOf('nenhuma');
+
+console.log(index); //Saída: -1
 
     //Método .includes()
 //
