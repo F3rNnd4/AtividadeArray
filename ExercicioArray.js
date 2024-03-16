@@ -261,9 +261,27 @@ console.log(mesadaVerificada); //Saída: false
 
 
 //Método .slice()
-//
+//Retorna uma cópia do array especificada de duas formas: Onde deve começar 
+//e Onde deve terminar/cortar o array;
 
+//----------------Exemplo 1----------------
+//Crio um array com letras;
+let array = ['a', 'b', 'c', 'd', 'e'];
+//Usando o .slice(), nós criamos uma cópia do array que começa a partir da posição 2;
+let novoArray = array.slice(2);
+//Exibo o array original e a cópia;
+console.log(array); //Saída: ['a', 'b', 'c', 'd', 'e']
+console.log(novoArray); //Saída: ['c', 'd', 'e']
 
+//----------------Exemplo 2----------------
+//Crio um array com letras;
+let lista = ['a', 'b', 'c', 'd', 'e'];
+//Usando o .slice(), criamos uma cópia do array onde o número antes
+//da vírgula é de onde queremos começar e o número depois onde queremos cortar o array;
+let novaLista = lista.slice(1, 4);
+//Exibo o original e a cópia;
+console.log(lista); //Saída: ['a', 'b', 'c', 'd', 'e']
+console.log(novaLista); //Saída: ['b', 'c', 'd']
 
 
 //Método .find()
