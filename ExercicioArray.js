@@ -1,6 +1,6 @@
 //Exercicio Array
 
-    //Método .reverse()
+//Método .reverse()
 //Esse método tem a função de inverter a ordem dos elementos, 
 //alterando o primeiro array.
 
@@ -31,7 +31,10 @@ let petsInvertidos = pets.reverse();
 //Exibo a ordem invertida;
 console.log(petsInvertidos); //Saída: ['porquinho da india', 'gato', 'cachorro', 'calopsita']
 
-    //Método .concat()
+
+
+
+//Método .concat()
 //Este método permite juntar arrays e retornar um novo.
 
 //----------------Exemplo 1----------------
@@ -54,7 +57,10 @@ let novasFrutasVitamicaC = frutasVitaminaC.concat(['abacaxi', 'caju', 'morango']
 console.log(frutasVitaminaC); //Saída: ['acerola', 'laranja', 'limão']
 console.log(novasFrutasVitamicaC); //Saída: ['acerola', 'laranja', 'limão', 'abacaxi', 'caju', 'morango']
 
-    //Método .join()
+
+
+
+//Método .join()
 //O .join() cria uma string através do array, ou 
 //junta os elementos do array em uma string.
 
@@ -82,7 +88,10 @@ let meninasDaEquipeString = meninasDaEquipe.join(', ');
 console.log(meninasDaEquipe); //Saída: ['Mariana', 'Julia', 'Rayssa', 'Fernanda']
 console.log(meninasDaEquipeString); //Saída: Mariana, Julia, Rayssa, Fernanda
 
-    //Método .indexOf()
+
+
+
+//Método .indexOf()
 //Este procura pelo elemento dentro de um array e
 //se encontrar retorna com a posição/index em que o elemento está,
 //se não encontrar retorna com "-1".
@@ -110,7 +119,10 @@ let index = frase.indexOf('4');
 //vai ser '-1';
 console.log(index); //Saída: -1
 
-    //Método .includes()
+
+
+
+//Método .includes()
 //O .includes() verifica se um elemento escolhido está incluso 
 //no array, se sim a saída é 'true' e se não 'false'.
 
@@ -135,22 +147,68 @@ let trueOrFalse = numerosImpares.includes('2');
 console.log(trueOrFalse); //Saída: false
 
 
-    //Método .forEach()
+
+
+//Método .forEach()
+//Este método nos permite percorrer o array um por um e realiza
+//uma ação para cada elemento.
+
+//----------------Exemplo 1----------------
+//Crio um array com estados do Sudeste
+let estadosSudeste = ['Sao Paulo', 'Minas Gerais', 'Espirito Santo', 'Rio de Janeiro'];
+//O .forEach é usado para percorrer pelos elementos e precisa de uma função como argumento.
+//Função essa com o nome de 'função de callback' (function(...))que é chamada para cada elemento.
+//O código dentro da função será executado quatro vez, um para cada estado.
+estadosSudeste.forEach(function (estadosSudeste) {
+    //Exibo o resultado do código
+    console.log(estadosSudeste)
+    //Saída: Sao Paulo
+    //Minas Gerais
+    //Espirito Santo
+    //Rio de Janeiro
+})
+
+//----------------Exemplo 2----------------
+//Crio um array com doces
+let doces = ['bolo', 'sorvete', 'chocolate', 'brigadeiro'];
+//Uso o método .forEach para percorrer pelos elementos e executar a função;
+doces.forEach(function (doces) {
+//Exibo o resultado do código
+    console.log(doces)
+    //Saída: bolo
+    //sorvete
+    //chocolate
+    //brigadeiro
+})
+
+
+
+//Método .filter()
 //
 
-    //Método .filter()
-//
 
-    // Método .lastIndex()
-//
 
-    //Método .reduce()
-//
 
-    //Método .slice()
+//Método .reduce()
 //
 
 
 
-    //Método .splice()
+
+//Método .slice()
 //
+
+
+
+
+//Método .find()
+//
+
+
+
+
+//Método .splice()
+//
+
+
+
