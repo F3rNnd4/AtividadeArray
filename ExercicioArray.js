@@ -186,14 +186,14 @@ sweets.forEach(function (sweets) {
 //----------------Exemplo 1----------------
 //Crio um array de nomes;
 let names = [
-            'Alejandra', 
-            'Bruna', 
-            'Beatriz', 
-            'Bento',
-            'Camila',
-            'Carol',
-            'Daniel'
-        ]
+    'Alejandra',
+    'Bruna',
+    'Beatriz',
+    'Bento',
+    'Camila',
+    'Carol',
+    'Daniel'
+]
 
 //Com o método, eu vou filtar o array com os nomes e passar uma função á ele.
 //Neste caso eu quero filtrar os nomes que começem com (startsWith) a letra 'B';
@@ -204,22 +204,22 @@ console.log(filteredNames); //Saída: ['Bruna', 'Beatriz', 'Bento']
 //----------------Exemplo 2----------------
 //Crio um array de tipos de animais vertebrados e os animais;
 let vertebrates = [
-    { type: 'mamifero', animal: 'onça'},
-    { type: 'mamifero', animal: 'vaca'},
-    { type: 'reptil', animal: 'serpente'},
-    { type: 'reptil', animal: 'jacare'},
-    { type: 'reptil', animal: 'tartaruga'},
-    { type: 'ave', animal: 'galinha'}
+    { type: 'mamifero', animal: 'onça' },
+    { type: 'mamifero', animal: 'vaca' },
+    { type: 'reptil', animal: 'serpente' },
+    { type: 'reptil', animal: 'jacare' },
+    { type: 'reptil', animal: 'tartaruga' },
+    { type: 'ave', animal: 'galinha' }
 ]
 //Nesse método se espera que o retono seja dos nomes dos animais que o tipo seja
 //reptil. Então do array de vertebrados que eu criei vai filtrar aqueles que o 
 //type (tipo) for igual a réptil;
 let filteredVertebrates = vertebrates.filter((a) => a.type == 'reptil');
 //Exibo o tipo com os animas filtrados;
-console.log(filteredVertebrates); 
+console.log(filteredVertebrates);
 //Saída:  { type: 'reptil', animal: 'serpente'},
-        //{ type: 'reptil', animal: 'jacare'},
-        //{ type: 'reptil', animal: 'tartaruga'}
+//{ type: 'reptil', animal: 'jacare'},
+//{ type: 'reptil', animal: 'tartaruga'}
 
 
 
@@ -229,12 +229,12 @@ console.log(filteredVertebrates);
 //----------------Exemplo 1----------------
 //Crio um array de tipos de alimentos orgânicos com nomes de alimentos;
 let organics = [
-    { type: 'fruta', food: 'mamao'},
-    { type: 'fruta', food: 'pera'},
-    { type: 'verdura', food: 'brocolis'},
-    { type: 'legume', food: 'cenoura'},
-    { type: 'fruta', food: 'uva'},
-    { type: 'verdura', food: 'couve'}
+    { type: 'fruta', food: 'mamao' },
+    { type: 'fruta', food: 'pera' },
+    { type: 'verdura', food: 'brocolis' },
+    { type: 'legume', food: 'cenoura' },
+    { type: 'fruta', food: 'uva' },
+    { type: 'verdura', food: 'couve' }
 ]
 //Nesta linha nós verificamos se pelo menos um dos elementos se encaixa na condição
 //que é: o tipo tem que ser igual a 'fruta'. Condição verdadeira;
@@ -245,12 +245,12 @@ console.log(verifiedOrganics); //Saída: true
 //----------------Exemplo 2----------------
 //Crio um array de nomes e quanto de mesada esses nomes ganham;
 let pocketmoney = [
-    { name: 'Maria', pocketmoney: 200},
-    { name: 'Eduarda', pocketmoney: 150},
-    { name: 'Gabriel', pocketmoney: 180},
-    { name: 'Daniela', pocketmoney: 120},
-    { name: 'Fatima', pocketmoney: 250},
-    { name: 'Mayara', pocketmoney: 220}
+    { name: 'Maria', pocketmoney: 200 },
+    { name: 'Eduarda', pocketmoney: 150 },
+    { name: 'Gabriel', pocketmoney: 180 },
+    { name: 'Daniela', pocketmoney: 120 },
+    { name: 'Fatima', pocketmoney: 250 },
+    { name: 'Mayara', pocketmoney: 220 }
 ]
 //Nesta linha eu crio uma variável com uma função que verifica se pelo menos um elemento,
 //no caso a mesada (pocketmoney), é menor que 100. Função falsa;
@@ -301,15 +301,15 @@ let cakes = [
 let foundCakes = cakes.find(c => c.startsWith('l'));
 //Exibo o primeiro resultado encontrado;
 console.log(foundCakes); //Saída: limao
- 
+
 //----------------Exemplo 2----------------
 //Crio um array com pets que conheço;
 let petsThatIKnow = [
-    { name: 'kito', animal: 'calopsita'},
-    { name: 'jade', animal: 'porquinho da india'},
-    { name: 'chico', animal: 'gato'},
-    { name: 'lilica', animal: 'gato'},
-    { name: 'ruginha', animal: 'tartaruga'}
+    { name: 'kito', animal: 'calopsita' },
+    { name: 'jade', animal: 'porquinho da india' },
+    { name: 'chico', animal: 'gato' },
+    { name: 'lilica', animal: 'gato' },
+    { name: 'ruginha', animal: 'tartaruga' }
 ]
 //Com o método, eu vou buscar no array na parte dos animais por gato;
 let foundPet = petsThatIKnow.find(pet => pet.animal == 'gato');
@@ -319,7 +319,49 @@ console.log(foundPet);
 
 
 //Método .splice()
-//
+//Permite adicionar, remover ou substituir elementos em qualquer posição do array.
 
+//----------------Exemplo 1 - Remover----------------
+//Crio um array com nomes;
+let myGroup = [
+    'Alejandra',
+    'Fernanda',
+    'Bruna',
+    'Samuel',
+    'Nathalia',
+]
+//Nesta linha de código estamos usando o .splice para remover um elemento na posição 1;
+let fourPeople = myGroup.splice(1, 1);
+//Aqui eu exibo o array com o elemento removido e o elemento removido;
+console.log(myGroup); //Saída: ['Alejandra', 'Bruna', 'Samuel', 'Nathalia']
+console.log(fourPeople); //Saída: ['Fernanda']
 
+//----------------Exemplo 2 - Adicionar----------------
+//Crio um array com nomes;
+let myGroup2 = [
+    'Alejandra',
+    'Fernanda',
+    'Bruna',
+    'Samuel',
+    'Nathalia',
+]
+//Nesta linha de código estamos usando o .splice para somente adicionar um 
+//elemento na posição 5;
+let fivePeople = myGroup2.splice(2, 0, 'Theo');
+//Aqui eu exibo o array junto do elemento adicionado;
+console.log(myGroup2); //Saída: ['Alejandra', 'Fernanda', 'Theo', 'Bruna', 'Samuel', 'Nathalia']
 
+//----------------Exemplo 3 - Substituir----------------
+//Crio um array com nomes;
+let myGroup3 = [
+    'Alejandra',
+    'Fernanda',
+    'Samuel',
+    'Bruna',
+    'Nathalia',
+]
+//Nesta linha de código estamos usando o .splice para substituir dois
+//elemento na posição 1 e 2;
+let People = myGroup3.splice(1, 2, 'Raphaelle', 'Jessica');
+//Aqui eu exibo o array junto dos elementos substituídos;
+console.log(myGroup3);
