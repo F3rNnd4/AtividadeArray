@@ -9,27 +9,21 @@
 //----------------Exemplo 1----------------
 //Declaro elementos, no caso as cores;
 let colors = ['roxo', 'branco', 'preto'];
-
 //Exibo para que na próxima etapa eu inverta a ordem;
 console.log(colors); //Saída: ['roxo', 'branco', 'preto']
-
 //Utilizo o método .reverse() para inverter a ordem
 //dos elementos declarados;
 let colorsInReverse = colors.reverse();
-
 //Exibo o resultado com o método aplicado;
 console.log(colorsInReverse); //Saída: ['preto', 'branco', 'roxo']
 
 //----------------Exemplo 2----------------
 //Declaro elementos iniciais;
 let pets = ['calopsita', 'cachorro', 'gato', 'porquinho da india'];
-
 //Exibo para que na próxima etapa eu inverta a ordem;
 console.log(pets); //Saída: ['calopsita', 'cachorro', 'gato', 'porquinho da india']
-
 //Uso o método .reverse() para inverter a ordem;
 let invertedPets = pets.reverse();
-
 //Exibo a ordem invertida;
 console.log(invertedPets); //Saída: ['porquinho da india', 'gato', 'cachorro', 'calopsita']
 
@@ -43,18 +37,16 @@ console.log(invertedPets); //Saída: ['porquinho da india', 'gato', 'cachorro', 
 let listOfNumbers = [1, 2, 3];
 //Crio um novo array com o método para adicionar mais números a essa lista;
 let newListOfNumbers = listOfNumbers.concat([4, 5, 6]);
-
 //Exibo a lista inicial e a final atualizada;
 console.log(listOfNumbers); //Saída: [1, 2, 3]
 console.log(newListOfNumbers); //Saída: [1, 2, 3, 4, 5, 6]
 
 //----------------Exemplo 2----------------
-//Crio o array, uma lista de frutas
+//Crio o array, uma lista de frutas com vitamina C;
 let fruitsVitaminC = ['acerola', 'laranja', 'limão'];
 //Novo array utilizando o método para colocar mais frutas;
 let newFruitsVitaminC = fruitsVitaminC.concat(['abacaxi', 'caju', 'morango']);
-
-//Exibo a lista original e a final
+//Exibo a lista original e a final;
 console.log(fruitsVitaminC); //Saída: ['acerola', 'laranja', 'limão']
 console.log(newFruitsVitaminC); //Saída: ['acerola', 'laranja', 'limão', 'abacaxi', 'caju', 'morango']
 
@@ -67,11 +59,9 @@ console.log(newFruitsVitaminC); //Saída: ['acerola', 'laranja', 'limão', 'abac
 //----------------Exemplo 1----------------
 //Crio um array com as letras sendo os elementos;
 let letters = ['a', 'b', 'c'];
-
 //Utilizo o método para criar uma string que separe
 //os elementos com um traço, "-";
 let lettersString = letters.join('-');
-
 //Exibo das duas formas, como array e como string;
 console.log(letters); //Saída: ['a', 'b', 'c']
 console.log(lettersString); //Saída: a-b-c
@@ -79,11 +69,9 @@ console.log(lettersString); //Saída: a-b-c
 //----------------Exemplo 2----------------
 //Array com o nome das meninas da equipe como elementos;
 let teamGirls = ['Mariana', 'Julia', 'Rayssa', 'Fernanda'];
-
 //Uso o método para criar a string que separe os 
 //nomes com virgula e espaço, ", ";
 let teamGirlsString = teamGirls.join(', ');
-
 //E exibo como array e como string;
 console.log(teamGirls); //Saída: ['Mariana', 'Julia', 'Rayssa', 'Fernanda']
 console.log(teamGirlsString); //Saída: Mariana, Julia, Rayssa, Fernanda
@@ -91,29 +79,25 @@ console.log(teamGirlsString); //Saída: Mariana, Julia, Rayssa, Fernanda
 
 
 //Método .indexOf()
-//Este procura pelo elemento dentro de um array e
-//se encontrar retorna com a posição/index em que o elemento está,
+//Este procura pelo elemento dentro de um array e assim que encontra
+//retorna com a posição/index em que o elemento está,
 //se não encontrar retorna com "-1".
 
 //----------------Exemplo 1----------------
 //Gero um array com letras;
 let lettersList = ['a', 'b', 'c', 'd'];
-
 //Utilizo do método para descobrir em que posição/
 //index a letra 'd' está;
-let position = lettersList.indexOf('d')
-
+let position = lettersList.indexOf('d');
 //Exibo essa posição;
 console.log(position); //Saída: 3
 
 //----------------Exemplo 2----------------
 //Gero array com números;
 let numbers = ['1', '2', '3'];
-
 //Utilizo do método para descobrir em que posição/
 //index o número '4' que não se encontra no array está;
 let index = numbers.indexOf('4');
-
 //Como o número '4' não existe no array a posição 
 //vai ser '-1';
 console.log(index); //Saída: -1
@@ -127,27 +111,23 @@ console.log(index); //Saída: -1
 //----------------Exemplo 1----------------
 //Crio o array com as vogais;
 let vowels = ['a', 'e', 'i', 'o', 'u'];
-
 //E verifico se a vogal escolhida 'i' está inclusa no array;
 let verification = vowels.includes('i');
-
-//O resultado é a resposta, que é verdadeiro que tem o 'i' no array;
+//O resultado é a resposta, se é verdadeiro que tem o 'i' no array;
 console.log(verification); //Saída: true
 
 //----------------Exemplo 2----------------
 //Crio array com os números ímpares;
 let oddNumbers = ['1', '3', '5', '7', '9'];
-
 //E examino se o número que quero procurar está no array;
 let analysis = oddNumbers.includes('2');
-
 //A resposta é false, falso, pois 2 é par e não está na lista de ímpares;
 console.log(analysis); //Saída: false
 
 
 
 //Método .forEach()
-//Este método nos permite percorrer o array um por um e realiza
+//Este método nos permite percorrer o array um por um e realizar
 //uma ação para cada elemento.
 
 //----------------Exemplo 1----------------
@@ -163,7 +143,7 @@ southeasternStates.forEach(function (southeasternStates) {
     //Minas Gerais
     //Espirito Santo
     //Rio de Janeiro
-})
+});
 
 //----------------Exemplo 2----------------
 //Crio um array com doces
@@ -171,12 +151,12 @@ let sweets = ['bolo', 'sorvete', 'chocolate', 'brigadeiro'];
 //Uso o método .forEach para percorrer pelos elementos e executar a função;
 sweets.forEach(function (sweets) {
     //Exibo o resultado do código;
-    console.log(sweets)
+    console.log(sweets);
     //Saída: bolo
     //sorvete
     //chocolate
     //brigadeiro
-})
+});
 
 
 
@@ -193,8 +173,7 @@ let names = [
     'Camila',
     'Carol',
     'Daniel'
-]
-
+];
 //Com o método, eu vou filtar o array com os nomes e passar uma função á ele.
 //Neste caso eu quero filtrar os nomes que começem com (startsWith) a letra 'B';
 let filteredNames = names.filter((n) => n.startsWith('B'));
@@ -210,10 +189,10 @@ let vertebrates = [
     { type: 'reptil', animal: 'jacare' },
     { type: 'reptil', animal: 'tartaruga' },
     { type: 'ave', animal: 'galinha' }
-]
+];
 //Nesse método se espera que o retono seja dos nomes dos animais que o tipo seja
-//reptil. Então do array de vertebrados que eu criei vai filtrar aqueles que o 
-//type (tipo) for igual a réptil;
+//réptil. Então do array de vertebrados que eu criei vai filtrar aqueles que o 
+//type(tipo) for igual a réptil;
 let filteredVertebrates = vertebrates.filter((a) => a.type == 'reptil');
 //Exibo o tipo com os animas filtrados;
 console.log(filteredVertebrates);
@@ -235,7 +214,7 @@ let organics = [
     { type: 'legume', food: 'cenoura' },
     { type: 'fruta', food: 'uva' },
     { type: 'verdura', food: 'couve' }
-]
+];
 //Nesta linha nós verificamos se pelo menos um dos elementos se encaixa na condição
 //que é: o tipo tem que ser igual a 'fruta'. Condição verdadeira;
 let verifiedOrganics = organics.some((f) => f.type == 'fruta');
@@ -251,7 +230,7 @@ let pocketmoney = [
     { name: 'Daniela', pocketmoney: 120 },
     { name: 'Fatima', pocketmoney: 250 },
     { name: 'Mayara', pocketmoney: 220 }
-]
+];
 //Nesta linha eu crio uma variável com uma função que verifica se pelo menos um elemento,
 //no caso a mesada (pocketmoney), é menor que 100. Função falsa;
 let verifiedPocketMoney = pocketmoney.some((m) => m.pocketmoney < 100);
@@ -310,7 +289,7 @@ let petsThatIKnow = [
     { name: 'chico', animal: 'gato' },
     { name: 'lilica', animal: 'gato' },
     { name: 'ruginha', animal: 'tartaruga' }
-]
+];
 //Com o método, eu vou buscar no array na parte dos animais por gato;
 let foundPet = petsThatIKnow.find(pet => pet.animal == 'gato');
 //Exibo o primeiro resultado encontrado;
@@ -329,7 +308,7 @@ let myGroup = [
     'Bruna',
     'Samuel',
     'Nathalia',
-]
+];
 //Nesta linha de código estamos usando o .splice para remover um elemento na posição 1;
 let fourPeople = myGroup.splice(1, 1);
 //Aqui eu exibo o array com o elemento removido e o elemento removido;
@@ -344,9 +323,9 @@ let myGroup2 = [
     'Bruna',
     'Samuel',
     'Nathalia',
-]
+];
 //Nesta linha de código estamos usando o .splice para somente adicionar um 
-//elemento na posição 5;
+//elemento na posição 2;
 let fivePeople = myGroup2.splice(2, 0, 'Theo');
 //Aqui eu exibo o array junto do elemento adicionado;
 console.log(myGroup2); //Saída: ['Alejandra', 'Fernanda', 'Theo', 'Bruna', 'Samuel', 'Nathalia']
@@ -359,7 +338,7 @@ let myGroup3 = [
     'Samuel',
     'Bruna',
     'Nathalia',
-]
+];
 //Nesta linha de código estamos usando o .splice para substituir dois
 //elemento na posição 1 e 2;
 let People = myGroup3.splice(1, 2, 'Raphaelle', 'Jessica');
